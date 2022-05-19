@@ -1,0 +1,11 @@
+#homeButton{
+	background-image:url('../images/homeIcon2.png');
+}
+
+.asterisk{
+	color: red;
+}
+
+#title {
+	position: right;
+}

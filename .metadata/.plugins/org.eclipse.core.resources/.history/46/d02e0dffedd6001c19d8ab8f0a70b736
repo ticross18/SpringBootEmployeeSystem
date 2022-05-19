@@ -1,0 +1,16 @@
+package com.system.spring;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+
+//@SpringBootApplication(scanBasePackages={"com.system.spring.web.entities.Employees", "com.system.spring.web.entities.EmpComp"})
+public class EmploymentSystemApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EmploymentSystemApplication.class, args);
+	}
+
+}

@@ -1,0 +1,57 @@
+package com.system.spring;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.system.spring.repos.EmployeeRepository;
+import com.system.spring.web.entities.Employees;
+
+
+@SpringBootApplication
+@EnableJpaRepositories(basePackageClasses= {EmployeeRepository.class})
+public class EmploymentSystemApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EmploymentSystemApplication.class, args);
+	}
+
+}
+
+
+@RestController
+@RequestMapping("/addEmp")
+public class EmployeeController {
+
+	@Autowired
+	EmployeeRepository repository;
+	
+	/* @GetMapping
+	public Iterable<Product> getProducts(){
+		return repository.findAll();
+	} */
+	
+	@PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+	public Employees create(@RequestBody Employees employees) {
+		return repository.save(employees);
+	}
+	
+	/* @PutMapping
+	public Product update(@RequestBody Product product) {
+		return repository.save(product);
+	}
+	
+	@GetMapping("/{}id")
+	public Product getProduct(@PathVariable("id") Long id) {
+		return repository.findOne(id);
+	} */ 
+}
+

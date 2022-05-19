@@ -1,0 +1,5 @@
+package com.system.spring.repos;
+
+public class EmployeeRepository {
+
+}

@@ -1,0 +1,14 @@
+package com.system.spring.web.controllers;
+
+public class HomeController {
+	@Controller
+	class MyController
+	{
+	    @RequestMapping("AddEmp")
+	    public String myAction()
+	    {
+	        /* your logic here */
+	        return 'redirect:student';
+	    }
+	}
+}

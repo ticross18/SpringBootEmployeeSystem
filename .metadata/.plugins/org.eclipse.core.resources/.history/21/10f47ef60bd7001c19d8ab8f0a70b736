@@ -1,0 +1,17 @@
+package com.system.spring.repos;
+
+import java.sql.Date;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import com.system.spring.web.entities.Employees;
+
+@Repository
+public interface EmployeeRepository  extends CrudRepository<Employees, Integer> {
+	   @Query("INSERT INTO employees (fname, mname, lname, dob, position) VALUES (fname, mname, lname, dob, description);")
+	   List<Employees> create(@Param("fname") String fname, @Param("mname") String mname, @Param("lname") String lname, @Param("dob") Date date, @Param("position") String position);
+}

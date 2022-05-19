@@ -1,0 +1,5 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/mydb
+spring.datasource.username=$Tiffany
+spring.datasource.password=$password
+
+#never put space after any properties (put a space after root and was troubleshooting for hours on why it wouldnt connect

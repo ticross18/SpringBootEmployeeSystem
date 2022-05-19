@@ -1,0 +1,51 @@
+package com.system.spring.web.controllers;
+
+import java.sql.Date;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.system.spring.repos.EmployeeRepository;
+import com.system.spring.web.entities.Employees;
+
+
+@RestController
+@RequestMapping("/addEmp")
+public class EmployeeController {
+
+	@Autowired
+	EmployeeRepository repository;
+	
+	/* @GetMapping
+	public Iterable<Product> getProducts(){
+		return repository.findAll();
+	} */
+	
+	@PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+	public @ResponseBody String addNewUser(@RequestParam String fname, @RequestParam String mname, @RequestParam String lname, @RequestParam Date dob, @RequestParam String position) {
+		Employees emp = new Employees();
+		emp.setFname(fname);
+		emp.setMname(mname);
+		emp.setLname(lname);
+		emp.setDob(dob);
+		emp.setPosition(position);
+		repository.save(emp);
+		return "saved";
+	}
+	
+	/* @PutMapping
+	public Product update(@RequestBody Product product) {
+		return repository.save(product);
+	}
+	
+	@GetMapping("/{}id")
+	public Product getProduct(@PathVariable("id") Long id) {
+		return repository.findOne(id);
+	} */ 
+}

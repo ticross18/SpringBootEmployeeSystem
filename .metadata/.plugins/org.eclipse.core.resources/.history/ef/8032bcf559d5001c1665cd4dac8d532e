@@ -1,0 +1,16 @@
+package com.system.spring.web.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class HomeController {
+	@Controller
+	class MyController
+	{
+	    @GetMapping("index.html")
+	    public String myAction()
+	    public String method() {
+	        return "index.html"; //extension depends on view resolver.
+	    }
+	}
+}

@@ -1,0 +1,1 @@
+ALTER TABLE employees ADD CONSTRAINT employee_unq UNIQUE (fname, mname, lname, dob);

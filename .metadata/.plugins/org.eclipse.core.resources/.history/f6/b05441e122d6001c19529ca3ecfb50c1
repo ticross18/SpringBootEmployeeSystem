@@ -1,0 +1,5 @@
+package com.system.spring.web.entities;
+
+public class empComp {
+
+}

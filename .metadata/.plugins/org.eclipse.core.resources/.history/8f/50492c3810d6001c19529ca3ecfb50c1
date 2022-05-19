@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Compensation</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/screens.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<a href="/"><img src="images/homeIcon2.png" id="homeButton" alt="home button"></a>
+
+<div id="addEmpBox" >
+<h1 id="title">Add Compensation</h1>
+
+
+ <form id="userInput">
+        	<label for="type">Type:</label><br>
+			<select name="type" id="type" style="margin-bottom:10px;">
+			  <option value="volvo">Salary</option>
+			  <option value="saab">Bonus</option>
+			  <option value="mercedes">Commission</option>
+			  <option value="audi">Allowance</option>
+			  <option value="audi">Adjustment</option>
+			</select><br>
+			
+            <label for="amount">Amount</label><br>
+            $<input type="number" id="amount" name="amount"><br>
+            
+            <label for="lname" >Description </label><br>
+            <textarea type="text" id="description" name="description" rows="5" cols="30"></textarea><br>
+            
+            <label for="dob">Date</label><br>
+            <input type="month" id="end" name="end"
+     		  min="2018-03" value="2018-05">
+            <input type="submit" id="submit" name ="submit" style="margin-left:10px; width:80px;"/>
+        </tr>
+ </form>
+</div>
+
+</body>
+</html>

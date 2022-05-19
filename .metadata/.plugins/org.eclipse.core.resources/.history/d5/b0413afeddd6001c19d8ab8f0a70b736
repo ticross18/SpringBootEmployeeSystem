@@ -1,0 +1,13 @@
+package com.system.spring.web;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication(scanBasePackages={"com.system.spring.web.entities"})
+public class EmploymentSystemApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EmploymentSystemApplication.class, args);
+	}
+
+}

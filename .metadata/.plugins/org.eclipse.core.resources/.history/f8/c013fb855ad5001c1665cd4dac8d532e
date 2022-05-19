@@ -1,0 +1,14 @@
+package com.system.spring.web.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+public class HomeController {
+@Controller
+class MyController
+{
+	@RequestMapping("index.html")
+	public String myAction()
+	  	return'redirect:addEmp';
+	}
+}

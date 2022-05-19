@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Add Employee</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/screens.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<a href="/"><img src="images/homeIcon2.png" id="homeButton" alt="home button"></a>
+
+	<div id="addEmpBox">
+		<h1 id="title">Add Employee</h1>
+
+
+		    <form:form action="add employee" method="post" modelAttribute="Employees" id="userInput">
+			<form:label for="fname">First name<span class="asterisk">*</span> </form:label><br>
+			<form:input type="text" id="fname" name="fname"/><br>
+			<form:label for="mname">Middle name</form:label><br>
+			<form:input type="text" id="mname" name="mname"/><br>
+			<form:label for="lname">Last name <span class="asterisk">*</span> </form:label><br>
+			<form:input type="text" id="lname" name="lname"/><br>
+			<form:label for="dob">Date of Birth<span class="asterisk">*</span> </form:label><br>
+			<form:input type="date" id="dob" name="dob"/><br>
+			<form:label for="position">Position <span class="asterisk">*</span> </form:label><br>
+			<form:input type="text" id="position" name="position"/><br>
+			<form:input type="submit" id="submit" name="submit" formmethod="post" />
+			</tr>
+		</form>
+	</div>
+
+</body>
+
+</html>

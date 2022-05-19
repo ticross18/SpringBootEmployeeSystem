@@ -1,0 +1,11 @@
+package com.system.spring.repos;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.system.spring.web.entities.Employees;
+
+@Repository
+public interface EmployeeRepository  extends CrudRepository<Employees, Long> {
+	
+}

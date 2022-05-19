@@ -1,0 +1,38 @@
+package com.system.spring.web.entities;
+
+
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public enum Type {
+    Salary,
+    Bonus,
+    Commission,
+    Allowance,
+    Adjustment;
+}
+
+
+@Entity
+public class Employees {
+	  @Id
+	  @GeneratedValue(strategy=GenerationType.AUTO)
+	  private Long id;
+	  private int UID,
+	
+	  @Column(columnDefinition = "ENUM('Salary', 'Bonus', 'Commission', 'Allowance', 'Adjustment')")
+	  @Enumerated(EnumType.STRING)
+	  private Type type,
+    
+	  private int amt,
+	  private String description,
+	  private Date date;
+    
+}

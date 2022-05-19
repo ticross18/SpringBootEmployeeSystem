@@ -1,0 +1,15 @@
+package com.system.spring;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.system.spring.web.controllers.EmployeeController;
+
+@SpringBootApplication(scanBasePackages={"com.system.spring.web.entities.Employees", "com.system.spring.web.entities.EmpComp"}, scanBasePackageClasses = {EmployeeController.class})
+public class EmploymentSystemApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EmploymentSystemApplication.class, args);
+	}
+
+}

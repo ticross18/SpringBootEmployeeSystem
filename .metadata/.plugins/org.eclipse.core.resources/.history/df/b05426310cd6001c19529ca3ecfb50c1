@@ -1,0 +1,106 @@
+.container {
+   display: flex;
+   
+}
+
+#homeButton{
+	width:75px;
+	height:75px;
+	position: relative;
+}
+
+.asterisk{
+	color: red;
+}
+
+#addEmpBox {
+	padding-left: 40vw;
+	border: 3px solid rgb(0, 0, 0);
+	padding-bottom: 15px;
+}
+
+#addEmpBox input {
+	margin-bottom: 15px;
+	padding: 2px;
+}
+
+#SearchEmpBox {
+	border: 3px solid rgb(0, 0, 0);
+	padding-bottom: 15px;
+	margin-right: 15vw;
+	text-align: center;
+}
+
+#userInput {
+	display:inline-table;
+}
+
+#results {
+	border: 2px solid black;
+	margin: 10px;
+	background-color: lightgrey;
+	border-collapse: collapse;
+	margin:  3vh 3vw;
+}
+
+#results th {
+	padding: 2vh 3vw;
+	border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#results td {
+	padding: 1vh 3vw ;
+	border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    
+}
+
+#finalEdit{
+	text-align: left;
+	position: left;
+}
+
+.optionButtons button{ 
+	text-transform: uppercase;
+	background-color: rgb(192, 192, 192);
+
+	padding: 10px 5px;
+	width:  auto ;
+	float:right;
+	position: sticky;
+	
+	margin-left: 13vw;
+	
+}
+
+.optionButtons button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.optionButtons button:hover {
+  background-color: rgb(255, 255, 128);
+  cursor: pointer;
+}
+
+#dateRange {	
+	border: 3px solid rgb(0, 0, 0);
+	width:fit-content;
+	margin: 3vh;
+	padding: 2vh;
+}
+
+
+
+.monthDropDown {
+	width:110px;
+}
+
+
+tr.entries:hover {
+  background-color: white;
+  cursor: pointer;
+} 
+
+

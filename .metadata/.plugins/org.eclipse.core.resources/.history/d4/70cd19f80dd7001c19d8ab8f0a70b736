@@ -1,0 +1,10 @@
+package com.system.spring.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.system.spring.repos.EmployeeRepository;
+import com.system.spring.web.entities.Employees;
+
+public class EmployeeService {	
+	public String addEmployee(Employees employees);
+}

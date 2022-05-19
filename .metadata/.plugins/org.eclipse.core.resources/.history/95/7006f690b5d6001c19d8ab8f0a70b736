@@ -1,0 +1,19 @@
+package com.system.spring.web.entities;
+
+import java.sql.Date;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class Employees {
+	  @Id
+	  @GeneratedValue(strategy=GenerationType.AUTO)
+	  private int UID;
+	  private String fname;
+	  private String mname;
+	  private String lname;
+	  private Date dob;
+	  private String position;
+	  
+}

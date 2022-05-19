@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Next Choose Option Screen</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/screens.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<a href="/"><img src="images/homeIcon2.png" id="homeButton" alt="home button"></a>
+
+<div id="SearchEmpBox" >
+<h1 id="title">What would you like to do with this employee?</h1>
+
+
+ <table id="optionButtons">
+        <tr>
+            <td><button type="button" onclick="location.href = '#';"  id="addEmp" > Add Compensation </button></td>
+            <td><button type="button" onclick="location.href = '#';" id="search" > View Comp History </button></td>
+            <td><button type="button" onclick="location.href = '#';" id="viewEditEmp"> View/Edit Employee </button></td>
+        </tr>
+ </table>
+ 
+<button type="button" id ="finalEdit">Next</button>
+
+</div>
+</body>
+</html>

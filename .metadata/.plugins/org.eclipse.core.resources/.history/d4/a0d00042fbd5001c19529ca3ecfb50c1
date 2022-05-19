@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search to view/edit</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/screens.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<a href="/"><img src="images/homeIcon2.png" id="homeButton" alt="home button"></a>
+
+<div id="SearchEmpBox" >
+<h1 id="title">Search for Employee to be Edited/Viewed</h1>
+
+<form>
+<label for="fname">First name </label>
+<input type="text" id="fname" name="fname">
+<label for="lname">Last name  </label>
+<input type="text" id="lname" name="lname">
+<label for="position">Position</label>
+<input type="text" id="position" name="position">
+<button type="button" name ="search">Search</button>
+</form>
+
+<table border=1  rules=rows id="results" >
+	<tr>
+		<th>UID</th>
+		<th>First Name</th>
+		<th>Middle Name</th>
+		<th>Last Name</th>
+		<th>Birthdate</th>
+		<th>Position</th>
+	</tr >	
+	<tr class="entries" onclick="window.location='/';">
+		<td>1</td>
+		<td>Tiffany</td>
+		<td>Marie</td>
+		<td>Cross</td>
+		<td>06/04/92</td>
+		<td>Associate Applications Developer</td>		
+	</tr>
+	
+</table>
+
+</body>
+</html>
